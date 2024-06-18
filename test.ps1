@@ -7,11 +7,11 @@ $Binary32 = "lib32-msvc-14.2"
 $Binary64 = "lib64-msvc-14.2"
 
 if (($image -eq "vs2019-master") -or ($image -eq "vs2019-master-gce-us-central1")) {
-    $BoostVersions += @("boost_1_77_0","boost_1_83_0")
+    $BoostVersions += @("boost_1_83_0", "boost_1_84_0", "boost_1_85_0")
 
 }
 elseif (($image -eq "vs2022-master") -or ($image -eq "vs2022-master-gce-us-central1")){
-    $BoostVersions += @("boost_1_78_0","boost_1_83_0")
+    $BoostVersions += @("boost_1_78_0","boost_1_83_0", "boost_1_84_0", "boost_1_85_0")
     $Binary32 = "lib32-msvc-14.3"
     $Binary64 = "lib64-msvc-14.3"
 }
